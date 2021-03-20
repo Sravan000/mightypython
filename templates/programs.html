@@ -1,0 +1,303 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Python Project Box</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="{% static 'styles/projects_menu_css.css' %}">
+
+  <script src="{% static 'js/prism.js' %}"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      list-style: none;
+    }
+    #projects-container li {
+      padding: 10px 0;
+      list-style-type: none;
+
+    }
+
+    #projects-container li a {
+      color: black;
+      list-style-type: none;
+
+      text-align: center;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    #projects-container li a:hover {
+      text-decoration: none;
+      color: red;
+    }
+    .page-navigation{
+     
+      width:fit-content;
+      margin: auto;
+      font-size: 20px;
+        }
+    #submit-button{
+      border-width: 0;
+      background-color: white;
+      color: #583d72;
+      font-size: 20px;
+      cursor: pointer;
+      
+    }
+    #submit-button:hover{
+      color: red;
+    }
+    .row{
+      text-align: center;
+    }
+    #cirlce{
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background-color: #583d72;
+      display: inline-block;
+      margin:1px 5px;
+      text-align: center;
+    }
+    
+    @media (max-width : 420px){
+      .navbar-nav a{
+      font-size: 20px;
+      }
+      #submit-button{
+      font-size: 20px;
+      }
+      #follow img{
+        width: 25px;
+        height: 25px;
+      }
+      .contact-links{
+        font-size: 17px;
+      }
+      .project-links a, .contributors a{
+        font-size: 20px;
+      }
+    }
+    #follow{
+      background-color:white;
+      padding-bottom: 0px;
+    }
+    #follow h3{
+      color : #6610f2;
+      font-family: monospace;
+    }
+  
+    #follow .row{
+      text-align: left;
+      margin: 10px 20px;
+    }
+    #follow p{
+      font-size: 20px;
+      
+    }
+    #follow a{
+      color: #212529;
+      text-decoration: none;
+    }
+    #follow a img{
+      margin: 2px 5px;
+    }
+    
+    .row h4{
+      color: #6610f2;
+    }
+    .project-links a:hover{
+  
+  color:  #6610f2;
+  
+    }
+   
+    #follow .row h4{
+      margin: 25px 0;
+    }
+  .copyrights{
+    background-color:  #6f42c1;
+    
+  }
+  .copyrights h4{
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+    color: white;
+    margin-bottom: 0px;
+    
+  }
+  #project-numbers h4{
+    color: white;
+  }
+  .contributors a{
+    cursor: pointer;
+  }
+  .contributors a:hover{
+    cursor: pointer;
+  }
+  #line{
+    background-color: #6610f2;
+    height: 2px;
+  }
+  .project-links {
+    text-align: left;
+  }
+  .project-links a,.contributors a{
+    font-size: 20px;
+  }
+  @media (min-width : 420px){
+    #follow span{
+      font-size: 20px;
+    }
+    .row:first-child a{
+      font-size: 20px;
+    }
+  
+  }
+
+  </style>
+</head>
+
+<body>
+  <div id="top-container">
+    <div class="top-bar">
+      <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-light border border-dark">
+        <a class="navbar-brand" href="#">
+          <span class="title1">Python</span>
+          <span class="title2">Project</span>
+          <span class="title3">Box</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="width : 2.5vh;height: 2.5vh"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/pythonprojects/home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pythonprojects/projects">Python Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/python_automation_projects/projects">Python Automation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/machine_learning_projects/projects">Machine Learning</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+
+  </div>
+  <div id="projects-container">
+    <h3><span>Basic Programs</span> </h3>
+
+    <div class="projects">
+
+    <div class="container-fluid">
+      <div class="row">
+        {% for detail in projects %}
+
+          {% if detail.program_visibility %}
+        <div class="col-lg-3 col-md-4 col-sm-12">
+          
+          <form action={{detail.program_link}} method="POST">
+            {% csrf_token %}
+            <input name="project_name" value={{detail.program_link}} class="sr-only">
+            <div id="cirlce"></div>
+            <input id = "submit-button" type="submit" value ={{detail.program_name}}  >
+          </form>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+        
+
+      </div>
+      {% if projects.has_other_pages %}
+        <div class = "page-navigation">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            {% if projects.has_previous %}
+            <li class="page-item"><a class="page-link" href="?page={{ projects.previous_page_number }}">&laquo;</a></li>
+            {% else %}
+            <li class=" disabled page-item"><span class =  "page-link">&laquo;</span></li>
+            {% endif %}
+            {% for i in projects.paginator.page_range %}
+            {% if projects.number == i %}
+            <li class="active page-item"><span class =  "page-link">{{ i }} <span class="sr-only">(current)</span></span></li>
+            {% else %}
+            <li class = "page-item"><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+            {% endif %}
+            {% endfor %}
+            {% if projects.has_next %}
+            <li class="page-item"><a class="page-link" href="?page={{ projects.next_page_number }}">&raquo;</a></li>
+            {% else %}
+            <li class=" disabled page-item"><span class =  "page-link" >&raquo;</span></li>
+            {% endif %}
+          </ul>
+        </nav>
+      </div>
+          {% endif %}
+    </div>
+  </div>
+  </div>
+
+
+
+  <div id="follow">
+    <hr id = "line">
+        <div class = "row">
+          <div class = "col-lg-4 col-md-4 col-sm-12" >
+              <h3>PythonProjectBox</h3>
+              <span class = "contact-links">Follow us on Instagram:</span>
+      <a href="https://www.instagram.com/themightypythonista/" target="_blank"><img src="{% static 'images/instagram.png' %}" width="50px" height="50px"></a>
+      <br>
+      <p><a class = "contact-links" href="mailto:someone@example.com">Feedback@mightypython.com<img src = "https://img.icons8.com/ios/452/apple-mail.png" width="50px" height="50px"></a></p> 
+      
+    </div>
+          <div class = "col-lg-4 col-md-4 col-sm-12 project-links" >
+              <h4>Projects</h4>
+              <a href = "/pythonprojects/projects">Python Projects</a><br>
+              <a href="/machine_learning_projects/projects">Machine Learning Projects</a><br>
+              <a href="/python_automation_projects/projects">Python Automation Projects</a><br>
+              <a  href="/web_development_projects/projects">Web Development Projects</a><br>
+              <a href="/software_projects/projects">Softwares</a><br>
+              <a href="/basic_programs/projects">Basic Programs</a>
+          </div>
+          <div class = "col-lg-4 col-md-4 col-sm-12 contributors" >
+            <h4>Contribute</h4>
+            <a href="/pythonprojects/contributors">Our Top Contributors</a><br>
+            <a href="mailto:someone@example.com">Want To Contribute?</a>
+          </div>
+        </div>
+        <div class = "copyrights">
+          <h4>@pythonprojectbox, Some rights Reserved</h4>
+        </div>
+    
+    </div>
+</body>
+
+</html>

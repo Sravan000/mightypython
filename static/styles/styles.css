@@ -1,0 +1,307 @@
+body{
+    font-family: monospace;
+}
+#top-container{
+    height: 700px;
+    width:100%;
+    background-color: rgba(149,100,226,0.8);
+   display: flex;
+   justify-content: center;
+    border-radius: 15px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+
+}
+
+
+#top-container .top-bar{
+  background-color: white;
+  width: 90%;
+  height: 0px;
+  margin-top: 5%;
+  text-align: center;
+    background-color: #9663E2;
+   
+}
+
+/*navbar properties*/
+.navbar{
+    border-radius: 25px;
+    color: black;
+    
+    font-size: 140%;
+    padding-left: 50px
+}
+
+/*fontsize and font style*/
+.title1,.title2,.title3{
+    font-size: 4vh;
+    font-family: cursive;
+
+}
+  
+/*setting color of our websites*/
+.title1{
+    color: #583d72;
+}
+.title2{
+    color: #ec4646;
+}
+.title3{
+    color: #393e46;
+   
+}
+
+/*changing hover states*/
+
+#navbarText .nav-link:hover{
+    color: #ec4646;
+}
+
+/*For small screen we are decreasing size of title*/
+@media (max-width : 420px){
+    .title1,.title2,.title3{
+    font-size: 3vh;
+        margin-left: 0;
+}
+    .navbar-nav{
+        text-align: center;
+        color: red;
+    }
+    .jumbotron{
+        position: absolute;
+       top:200px; 
+    }
+    #features-container .card, #latest-projects .card{
+    width: 95%;
+}
+    
+    #customers .card-text{
+       padding: 30px;
+    }
+    #customers .card-title{
+        padding-left: 30px;
+    }
+    #customers .card{
+        padding: 5px;
+    }
+    
+    
+ 
+}
+/*For laptops and desktops*/
+@media (min-width : 1200px){
+    .navbar-nav{
+   margin-left: 150px;
+        
+}
+    #navbarText .nav-link{
+    padding: 0 20px;
+}
+   
+    
+}
+.card-text{
+    font-size: 15px;
+}
+#features-container img{
+    height: 200px;
+}
+#latest-projects .card img{
+    width: 60%;
+    padding: 15px;
+    margin: auto;
+   
+}
+
+
+/*changing jumbotron properties*/
+.jumbotron{
+    position: absolute;
+    top:200px;
+    background-color: transparent;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    
+}
+
+/*Setting size of title*/
+.display-4{
+    font-size: 5vh;    
+}
+
+/*Setting text and margin*/
+.container-fluid{
+text-align: center;  
+margin: 15px auto;
+    
+    
+}
+/*Changing cards width and setting to center*/
+.card{
+   width: 70%;
+    margin:auto;   
+}
+
+/*Making gap between cards*/
+.features-tiles{
+    padding: 20px;
+}
+
+#project-numbers{
+    background-color: rgba(149,100,226,1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding:40px;
+    height: auto;
+    color: white;
+
+
+    
+}
+
+.number-styling{
+/*  width: 100%;*/
+  display: flex;
+  flex-direction: row;
+
+}
+.sameline-clients{
+    text-align: center;
+    margin: 10px auto;
+
+}
+
+#customers{
+   
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+/*customers review cards*/
+.customer-carousel{
+    width:300px;
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #9663E2;
+}
+
+/*styling carousel*/
+.carousel-indicators li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    text-indent: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background-color: #ec4646;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+/*this makes carousel active*/
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #9663E2;
+}
+/*settings for arrows*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+/*  outline: black;*/
+/*  background-size: 100%, 100%;*/
+/*  border-radius: 50%;*/
+/*  border: 1px solid black;*/
+  background-image: none;
+    
+    
+}
+/*settings for arrows*/
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 50px;
+  color: #563D7C;
+}
+/*settings for arrows*/
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 50px;
+  color: #563D7C;
+}
+
+/*latestprojects*/
+#latest-projects{
+    background-color: #ffe6e6;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 85px;
+    border:20px;
+    border-color: rgb(149,100,226);
+    
+}
+
+#latest-projects span:nth-child(1){
+    color: #433d3c;
+}
+#latest-projects span:nth-child(2){
+    color:#9663E2;
+}
+#customers h3{
+    padding-top: 10px;
+    text-align: center;
+    color: #898b8a
+}
+
+#customers-response{
+    background-color: rgba(149,100,226,1);
+    height: auto;
+    width: 100%;
+    padding-top: 30px;
+    margin-top: 40px;
+    border-radius: 35px;
+    
+}
+#customers-response h3{
+    text-align: center;
+    color: white;
+}
+#customers-response button{
+    cursor: pointer;
+}
+
+.form-inputs{
+    margin: 10px 2%;
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: 2px;
+    
+}
+#follow{
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ffe6e6;
+}
+#follow hr{
+    border-width: 2px;
+    border-color: black;
+}
+#follow button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}

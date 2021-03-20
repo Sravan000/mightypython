@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Python Project Box</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel = "stylesheet" href = "styles/styles_template.css">
+<link rel = "stylesheet" href = "styles/prism.css">
+    <script src="js/prism.js"></script>
+ 
+</head>
+    <body>
+            <div id = "top-container" >
+        <div class = "top-bar">
+            <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-light border border-dark">
+      <a class="navbar-brand" href="#">
+          <span class = "title1">Python</span>  
+          <span class = "title2">Project</span> 
+          <span class = "title3">Box</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="width : 2.5vh;height: 2.5vh"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Python Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Python Automation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Machine Learning</a>
+          </li>
+        </ul>
+      
+        </div>
+            </nav>
+        </div>
+
+    </div> 
+        <div id = "project-codes">
+        
+        <div class = "container-fluid">
+            <div class = "row">
+                <div class = "adv-2 top-titles col-xs-12 col-md-2 col-lg-3">
+                    
+                </div>
+
+                <div class = "content top-titles col-xs-12 col-md-8 col-lg-6">
+                    <h3><strong>Python Project on Color Game</strong></h3>
+                    
+                    <h6>Contributed by : Sravan Kumar</h6>
+                    <h6>Last Update : 29/01/2021</h6>
+                    <br>
+                    <h5><strong>Project Description : </strong></h5>
+                    <br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntlaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    
+                    <br>
+                    <br>
+                    
+                   
+                    elit esse cillum dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruntlaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                    <br>dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br>
+                    <br>
+                    <h5><strong>Complete Code : </strong></h5>
+                    <pre>
+                <code class = "language-python">
+                        
+# Python program to find roots
+# of a quadratic equation
+import math
+ 
+# Prints roots of quadratic equation
+# ax*2 + bx + x
+ 
+ 
+def findRoots(a, b, c):
+ 
+    # If a is 0, then equation is
+    # not quadratic, but linear
+    if a == 0:
+        print("Invalid")
+        return -1
+    d = b * b - 4 * a * c
+    sqrt_val = math.sqrt(abs(d))
+ 
+    if d > 0:
+        print("Roots are real and different ")
+        print((-b + sqrt_val)/(2 * a))
+        print((-b - sqrt_val)/(2 * a))
+    elif d == 0:
+        print("Roots are real and same")
+        print(-b / (2*a))
+    else:  # d0
+        print("Roots are complex")
+        print(- b / (2*a), " + i", sqrt_val)
+        print(- b / (2*a), " - i", sqrt_val)
+ 
+ 
+# Driver Program
+a = 1
+b = -7
+c = 12
+ 
+# Function call
+findRoots(a, b, c)
+ 
+# This code is contributed by Sharad Bhardwaj.
+                    
+                    
+                    </code>
+  
+  </pre>
+  
+<h5><strong>Output : </strong></h5>  
+<!--
+<div class = "col-xs-12 col-md-10 col-lg-6">
+<img src = "images/main_page_1.jpg" style = "width: 95%">     
+</div>
+-->
+<img src = "images/main_page_1.jpg" style = "width: 95%"> 
+                                   
+                    
+                    
+              </div>      
+              
+                <div class = "adv-2 top-titles col-xs-12 col-md-2 col-lg-3">
+                    
+                </div>
+                                
+                                    </div>
+                                </div>
+                            </div>
+
+            
+        
+   
+            
+    <div id = "contact" >
+          <div class="jumbotron border border-danger" >
+          <h4 class="display-5">PythonProjectBox.com</h4>
+          <p class="lead">Send Feedback to us: <span style="font-family:serif">sravan.mudiraj.000@gmail.com</span></p>
+          <hr class="my-4">
+          <p>Follow us on Instagram :<button><img src="images/instagram.png"></button> </p>
+  
+</div>  
+    </div>
+    </body>
+</html>

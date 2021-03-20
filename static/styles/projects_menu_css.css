@@ -1,0 +1,138 @@
+body{
+    font-family: monospace;
+}
+#top-container{
+    height: 22vh;
+    width:100%;
+   display: flex;
+   justify-content: center;
+    border-radius: 15px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+
+}
+
+
+#top-container .top-bar{
+  background-color: white;
+  width: 90%;
+  height: 0px;
+  margin-top: 5%;
+  text-align: center;
+    background-color: #9663E2;
+   
+}
+
+/*navbar properties*/
+.navbar{
+    border-radius: 25px;
+    color: black;
+    font-family: monospace;
+    font-size: 140%;
+    padding-left: 50px
+}
+
+/*fontsize and font style*/
+.title1,.title2,.title3{
+    font-size: 3vh;
+    font-family: cursive;
+
+}
+  
+/*setting color of our websites*/
+.title1{
+    color: #583d72;
+}
+.title2{
+    color: #ec4646;
+}
+.title3{
+    color: #393e46;
+   
+}
+
+/*changing hover states*/
+
+#navbarText .nav-link:hover{
+    color: #ec4646;
+}
+
+/*For small screen we are decreasing size of title*/
+@media (max-width : 420px){
+    .title1,.title2,.title3{
+    font-size: 3vh;
+        margin-left: 0;
+}
+    .navbar-nav{
+        text-align: center;
+        color: red;
+    }
+    #top-container{
+        height: 90px;
+    }
+    
+   
+    
+ 
+}
+/*For laptops and desktops*/
+@media (min-width : 1200px){
+    .navbar-nav{
+   margin-left: 150px;
+        
+}
+    #navbarText .nav-link{
+    padding: 0 20px;
+}
+    h3{
+      padding-top: 20px;
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    
+}
+
+.top-titles{
+    text-align: center;
+    padding-top: 20px;
+    
+    
+}
+#projects-container h3{
+    color: #583d72;
+    text-align: center;
+}
+#projects-container .card{
+    margin: 10px 5px;
+    border-bottom-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+}
+
+
+h5{
+    color: #583d72;
+    font-size: 25px ;
+    padding: 15px 0;
+}
+#contact img{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+#contact button{
+    border: 0;
+    cursor: pointer;
+    background-color: #583d72;
+    
+}
+
+#contact{
+    margin: 20px;
+    background-color: #583d72;
+    color: white;
+    padding: 20px;
+    border-radius: 25px;
+        
+}
+

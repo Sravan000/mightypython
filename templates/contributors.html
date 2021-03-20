@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Python Project Box</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="{% static 'styles/projects_menu_css.css'%} ">
+  <link rel="stylesheet" href="{% static 'styles/prism.css'%} ">
+  <script src="{% static 'js/prism.js' %}"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      list-style: none;
+    }
+      #contributors h3{
+          color: #6f42c1;
+          
+      }
+      #contributors{
+          text-align: center;
+          padding: 25px 0;
+          
+      }
+      .row{
+          margin: 55px 0;
+          
+      }
+      #contributors h5{
+          text-align: left;
+          font-size: 22px;
+          color: #6f42c1;
+      } 
+      #contributors p{
+          text-align: left;
+          font-size: 20px;
+      }
+      .card img{
+          padding: 50px;
+      }
+      .card {
+          margin-bottom: 50px;
+      }
+     
+      @media (max-width : 420px){
+        .navbar-nav a{
+        font-size: 20px;
+        }
+      }
+      
+  </style>
+</head>
+
+<body>
+  <div id="top-container">
+    <div class="top-bar">
+      <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-light border border-dark">
+        <a class="navbar-brand" href="#">
+          <span class="title1">Python</span>
+          <span class="title2">Project</span>
+          <span class="title3">Box</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="width : 2.5vh;height: 2.5vh"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/pythonprojects/home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pythonprojects/projects">Python Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/python_automation_projects/projects">Python Automation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/machine_learning_projects/projects">Machine Learning</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+
+  </div>
+    
+    <div id = "contributors">
+        <h3>Our Top Contributors</h3>
+            
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="features-tiles col-xs-12 col-lg-4 col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="{% static 'images/ganesh.jpeg' %}"" alt="Ganesh Kavhar">
+            <div class="card-body">
+              <h5 class="card-title">Ganesh Kavhar</h5>
+              <p class="card-text">I am a coder , educator and a Data Scientist. I love data and analytics. In my day job, I work with database technologies including SQL, Python  , Big Data and Tableau. I am passionate about technologies and love coding and managing teams. In my spare time I like to teach Python , Web development , Python ,Data Structure and Algorithm  Databases, Programming etc. I am currently working on certain machine learning and Data Science projects and love to explore more in the Statistics field.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="features-tiles col-xs-12 col-lg-4 col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="{% static 'images/Aashish Kumar.jpg' %}"  alt="Aashish Kumar">
+            <div class="card-body">
+              <h5 class="card-title">Aashish Kumar(creator of _pythonworld_ Instagrm Page)</h5>
+              <p class="card-text">Hey Guys !! My name Aashish and iam Python Developer....I'm currently pursuing my master's | Master of Computer Application (MCA).I worked mostly on python to bulid my projects and beside that i know c, c++ , java, javascript, PHP</p>
+            </div>
+          </div>
+
+        </div>
+        
+
+      </div>
+
+    </div>
+    </div>
+
+    
+</body>
+
+</html>
