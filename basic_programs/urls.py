@@ -4,7 +4,7 @@ from . import views
 
 urlpatterns = [
     path("projects",views.projects),
-     path("testing-11",views.codes),
+     path("factorial-number",views.codes),
      path("fibonacci-series",views.codes)
 
 ]
