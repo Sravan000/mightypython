@@ -5,7 +5,7 @@ import random
 # Create your views here.
 def projects(request):
     projects = programs.objects.all()
-    paginator = Paginator(projects, 1) # Show 25 contacts per page
+    paginator = Paginator(projects, 10) # Show 25 contacts per page
 
     page = request.GET.get('page',1)
     try:
@@ -27,7 +27,7 @@ def codes(request):
           code = programs.objects.get(program_link=project_name)
           projects = programs.objects.all()
           random.seed(10)
-          randomlist = random.sample(range(0, len(projects)), 1)
+          randomlist = random.sample(range(0, len(projects)), 2)
 
           related_projects = [projects[i] for i in randomlist]
           print(related_projects)
