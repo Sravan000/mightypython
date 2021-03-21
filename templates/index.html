@@ -44,9 +44,10 @@
     font-size: 20px;
     
   }
-  #follow a{
-    color: #212529;
-    text-decoration: none;
+  #follow a, .contact-links{
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #6610f2;
   }
   #follow a img{
     margin: 2px 5px;
@@ -126,6 +127,9 @@ color:  #6610f2;
   background-color: #6610f2;
   height: 2px;
 }
+#top-container{
+  height: 45rem;
+}
 </style>
 
 <body>
@@ -167,7 +171,7 @@ color:  #6610f2;
       <p class="lead">This is a website where you will get projects to enhance your Python skills for completely free.
       </p>
       <hr class="my-4">
-      <p class="lead">We provide projects on Python, Machine Learning and Python Automation.</p>
+      <p class="lead">We provide projects on Python, Machine Learning, Web Development, Python Automation and Programs for beginners.</p>
 
     </div>
   </div>
@@ -281,8 +285,7 @@ color:  #6610f2;
 
             <div class="card-body">
               <h5 class="card-title">Jagjeevan Netha</h5>
-              <p class="card-text">Projects are really good to make hands dirty.Some quick example text to build on the
-                card title and make up the bulk of the card's content</p>
+              <p class="card-text">Projects are really good to make hands dirty.I really learnt so much from this projects.</p>
             </div>
           </div>
         </div>
@@ -291,8 +294,7 @@ color:  #6610f2;
 
             <div class="card-body">
               <h5 class="card-title">Mahendar</h5>
-              <p class="card-text">Thanks for uploading such amazing projects.Some quick example text to build on the
-                card title and make up the bulk of the card's content</p>
+              <p class="card-text">Thanks for uploading such amazing projects.Wishing to add more projects in future.</p>
             </div>
           </div>
         </div>
@@ -300,9 +302,8 @@ color:  #6610f2;
           <div class="card customer-carousel">
 
             <div class="card-body">
-              <h5 class="card-title">Ganesh Kavhar</h5>
-              <p class="card-text">Always looking for such amazing content.Some quick example text to build on the card
-                title and make up the bulk of the card's content</p>
+              <h5 class="card-title">Lokesh</h5>
+              <p class="card-text">Always looking for such amazing content.Waiting for uploading Machine Learning Projects.and some softwares come into handy.</p>
             </div>
           </div>
         </div>
@@ -368,11 +369,11 @@ color:  #6610f2;
     <form action="mailto:someone@example.com" method="post" enctype="text/plain">
       {% csrf_token %}
       <input type="text" id="fullname" class="form-inputs" placeholder="Full Name" maxlength="30" lang="en"
-        name="fullname"><br>
-      <input class="form-inputs" type="email" id="email" placeholder="Email Address" lang="en" name="email">
+        name="fullname" required><br>
+      <input class="form-inputs" type="email" id="email" placeholder="Email Address" lang="en" name="email" required>
       <br>
       <textarea class="form-inputs" id="message" name="w3review" rows="4" cols="30"
-        placeholder="Your Message"></textarea>
+        placeholder="Your Message" required></textarea>
       <br>
       <button type="submit" class="form-inputs">Send Message</button>
 
@@ -387,7 +388,7 @@ color:  #6610f2;
         <div class = "col-lg-4 col-md-4 col-sm-12" >
             <h3>PythonProjectBox</h3>
             <span class = "contact-links">Follow us on Instagram:</span>
-    <button><img src="{% static 'images/instagram.png' %}" width="50px" height="50px"></button>
+            <a href="https://www.instagram.com/themightypythonista/" target="_blank"><img src="{% static 'images/instagram.png' %}" width="50px" height="50px"></a>
     <br>
     <p><a href="mailto:someone@example.com" class = "contact-links">Feedback@mightypython.com<img src = "https://img.icons8.com/ios/452/apple-mail.png" width="50px" height="50px"></a></p> 
     
@@ -404,7 +405,7 @@ color:  #6610f2;
         <div class = "col-lg-4 col-md-4 col-sm-12 contributors" >
           <h4>Contribute</h4>
           <a href="pythonprojects/contributors">Our Top Contributors</a><br>
-          <a href="mailto:someone@example.com">Want To Contribute>?</a>
+          <a href="mailto:someone@example.com">Want To Contribute?</a>
         </div>
       </div>
       <div class = "copyrights">

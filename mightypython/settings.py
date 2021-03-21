@@ -25,7 +25,7 @@ SECRET_KEY = '_+p1)wpxo@n_)t4i5nxirkan)f7(jb#ugwgrl!=tt!0_gmtq=d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','3.15.46.49','localhost','ec2-3-15-46-49.us-east-2.compute.amazonaws.com']
+ALLOWED_HOSTS = ['3.140.175.147','127.0.0.1','3.15.46.49','localhost','ec2-3-15-46-49.us-east-2.compute.amazonaws.com']
 
 
 
@@ -82,12 +82,12 @@ WSGI_APPLICATION = 'mightypython.wsgi.application'
 
 DATABASES = {
     'default': {
-         'ENGINE': 'django.db.backends.mysql',
-         'NAME': 'mightypython',
-	     'USER' : 'root',
-	    'PASSWORD' : 'sravan',
-	    'HOST':'localhost',
-           'PORT' : '3306'
+         'ENGINE': 'django.db.backends.postgresql',
+         'NAME': 'themightypython',
+	     'USER' : 'postgres',
+	    'PASSWORD' : 'sravankumar',
+	    'HOST':'mighty-python.c78kn3sfjxeg.us-east-2.rds.amazonaws.com',
+           'PORT' : '5432'
 
     }
 }
