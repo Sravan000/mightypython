@@ -114,9 +114,10 @@
       font-size: 20px;
       
     }
-    #follow a{
-      color: #212529;
-      text-decoration: none;
+    #follow a, .contact-links{
+      color: black;
+      text-decoration: underline;
+      text-decoration-color: #6610f2;
     }
     #follow a img{
       margin: 2px 5px;
@@ -228,9 +229,9 @@
           
           <form action={{detail.program_link}} method="POST">
             {% csrf_token %}
-            <input name="project_name" value={{detail.program_link}} class="sr-only">
+            <input name="project_name" value={{ detail.program_link }} class="sr-only">
             <div id="cirlce"></div>
-            <input id = "submit-button" type="submit" value ={{detail.program_name}}  >
+            <input id = "submit-button" type="submit" value ={{ detail.program_name }}>
           </form>
         </div>
         {% endif %}
