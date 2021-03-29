@@ -25,7 +25,7 @@ SECRET_KEY = '_+p1)wpxo@n_)t4i5nxirkan)f7(jb#ugwgrl!=tt!0_gmtq=d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['3.140.175.147','127.0.0.1','3.15.46.49','localhost','ec2-3-15-46-49.us-east-2.compute.amazonaws.com']
+ALLOWED_HOSTS = ['themightypython.com','3.140.175.147','127.0.0.1','3.15.46.49','localhost','ec2-3-15-46-49.us-east-2.compute.amazonaws.com']
 
 
 
